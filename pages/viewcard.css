@@ -1,0 +1,9 @@
+/* In styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.button___gradient {
+    background: linear-gradient(120deg, #414aff 0%, #a509ff 75%);
+  }

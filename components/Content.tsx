@@ -1,6 +1,5 @@
 'use client'
 
-import { digitalImages } from '@/Constant/Data'
 import SectionWrapper from '@/HOC/SectionWrapper'
 import TextShowCase from '@/Utils/Motions/TextShowCase'
 import { zoomIn } from '@/Utils/Motions/motion'
@@ -41,13 +40,30 @@ const Content = () => {
             <TextShowCase fontSize='button2___gradient xm:px-7 px-5 xm:py-5 py-3 mt-7 text-white font-bold rounded-md'>Get In Now</TextShowCase>
         </div>
 
-        <div className=''>
-            {digitalImages.map((item) => {
-           return   <div className='absolute' key={item.id}>
-                    <Image src={item.digitalIMG} alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+        <motion.div variants={zoomIn(0.90 , 0.86)} className="md:flex hidden">   
+                    <div className='absolute top-0'>
+                    <Image src='/digital1.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
                 </div>
-            })}
-        </div>
+               <div className='absolute right-60 top-56'>
+                    <Image src='/digital2.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+               <div className='absolute left-44'>
+                    <Image src='/user11.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+               <div className='absolute bottom-16 left-64'>
+                    <Image src='/user5.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+               <div className='absolute left-72 top-20'>
+                    <Image src='/NFT3.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+               <div className='absolute bottom-0 right-[44rem]'>
+                    <Image src='/NFT9.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+               <div className='absolute bottom-28 right-[20rem]'>
+                    <Image src='/NFT14.jpg' alt='arts' width={1000} height={1000} className='object-cover w-8 h-8 rounded-[50%] border border-white' />
+                </div>
+                </motion.div>
+
     </section>
   )
 }

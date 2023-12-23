@@ -41,7 +41,6 @@ const x2 = useTransform(scrollYProgress, [0, 1], [0, -150])
                 <div key={item.Desc} className='flex justify-center items-center'>
                        <h2 className='filter-dark p-5 rounded-[33px] font-semibold'>{item.Desc}</h2>
                 </div>
-                // sm:text-[14px] xm:text-[10px] text-[12px]
             ))}
         </motion.div>
         </div>

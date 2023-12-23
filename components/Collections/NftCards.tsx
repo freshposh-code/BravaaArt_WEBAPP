@@ -8,7 +8,7 @@ import { nftCards } from '@/Constant/Data';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import {motion} from 'framer-motion'
 import SectionWrapper from '@/HOC/SectionWrapper';
-import { fadeIn, slideIn } from '@/Utils/Motions/motion';
+import { fadeIn } from '@/Utils/Motions/motion';
 
 const NftCards = () => {
   return (
@@ -62,7 +62,9 @@ const NftCards = () => {
           <Image src='/Ethereum-logo.png' alt='' width={500} height={500} className='w-6 h-6 object-cover xm:flex hidden' />
           <p className='text-[12px] font-bold'>{item.crypto} <span className="text-neutral-400 xm:text-[10px] text-[7px]">{item.cryptoNum}</span></p>
           </div>
+          <a href="https://www.behance.net/search/projects/nft%20website%20ui%20ux" target='_blank'>
           <TextShowCase fontSize='xm:p-2 p-[2px] font-bold text-center sm:text-[15px] xm:text-[14px] text-[10px] button___gradient border-y-2 border-r-2 border-l-2 border-l-[#5e66ff] border-fuchsia-300'>Place Bid <TrendingFlatIcon /></TextShowCase>
+          </a>
         </div>
         </div>
         </motion.div>
