@@ -12,8 +12,8 @@ import { fadeIn } from '@/Utils/Motions/motion';
 
 const NftCards = () => {
   return (
-    <section className="sm:px-20 px-6 sm:py-16 py-6">
-    <div className='flex justify-between items-center text-[#fff] sm:text-[1.3em] xm:text-[1em] text-[12px] font-semibold'>
+    <section className="sm:py-16 py-6">
+    <div className='flex justify-between items-center text-[#fff] sm:text-[1.3em] xm:text-[1em] text-[12px] font-semibold sm:px-20 px-6'>
         <TextShowCase fontSize=''>Top <span className='font-serif'>NFT's</span> now</TextShowCase>
 
         <Link href="/viewcards">
@@ -21,7 +21,7 @@ const NftCards = () => {
         </Link>
         </div>
 
-        <section className="flex flex-wrap mt-12 justify-center">
+        <section className="flex flex-wrap mt-12 justify-center sm:px-20 px-1">
           {nftCards.map((item, index) => (
         <motion.div variants={fadeIn("up", "spring", index * 0.45, 0.70 )} className='text-white py-5 px-2' key={item.id}>        
         <Image src={item.TopNft} alt="NFT's" width={1000} height={1000} className='w-[322px] h-[305px] object-cover' />
@@ -35,7 +35,7 @@ const NftCards = () => {
         <div className="flex items-center justify-between">
           <div className='flex items-center'>
           <Image src={item.userPic} alt='avater' width={500} height={500} className='rounded-[50%] xm:h-[36px] h-[25px] xm:w-[36px] w-[25px] object-cover' />
-          <TextShowCase fontSize='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff'}} className='xm:text-[15px] text-[11px]'/></TextShowCase>
+          <TextShowCase fontSize='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff', fontSize: '15px'}}/></TextShowCase>
           </div>
           <div className='font-semibold text-center'>
             <div className="flex xm:gap-4 gap-1 sm:text-sm xm:text-[13px] text-[9px]">

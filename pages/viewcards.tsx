@@ -6,8 +6,6 @@ import TextShowCase from '@/Utils/Motions/TextShowCase';
 import './viewcard.css'
 import { nftCards2 } from '@/Constant/Data';
 import Image from 'next/image';
-// import {motion} from 'framer-motion'
-// import { fadeIn } from '@/Utils/Motions/motion';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import SectionWrapper from '@/HOC/SectionWrapper';
@@ -15,8 +13,8 @@ import SectionWrapper from '@/HOC/SectionWrapper';
 const ViewCards = () => {
   return (
     <>
-    <section className="bg-[#030014] h-full p-6">
-      <div className="flex justify-between items-center">
+    <section className="bg-[#030014] h-full p-[5px]">
+      <div className="flex justify-between items-center p-2">
       <Link href='/' className=''>
         <ArrowBackIosIcon style={{color: 'purple'}} />
       </Link>
@@ -28,8 +26,8 @@ const ViewCards = () => {
       <Image src='/GoogleI.jpg' alt='' width={3000} height={3000} className='sm:w-16 w-10 sm:h-16 h-10 rounded-[50%] sm:mt-0 mt-6' />
        </div>
 
-      <section className="flex flex-wrap mt-12 justify-center">
-          {nftCards2.map((item, index) => (
+      <section className="flex flex-wrap sm:mt-12 mt-0 justify-center">
+          {nftCards2.map((item) => (
         <div className='text-white py-5 px-2' key={item.id}>        
         <Image src={item.TopNft} alt="NFT's" width={1000} height={1000} className='w-[322px] h-[305px] object-cover' />
      <div className="p-4 shadow-sm shadow-neutral-400 bg-[#00000000]">
@@ -42,7 +40,7 @@ const ViewCards = () => {
         <div className="flex items-center justify-between">
           <div className='flex items-center'>
           <Image src={item.userPic} alt='avater' width={500} height={500} className='rounded-[50%] xm:h-[36px] h-[25px] xm:w-[36px] w-[25px] object-cover' />
-          <TextShowCase fontSize='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff'}} className='xm:text-[15px] text-[11px]'/></TextShowCase>
+          <TextShowCase fontSize='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff', fontSize: '15px'}}/></TextShowCase>
           </div>
           <div className='font-semibold text-center'>
             <div className="flex xm:gap-4 gap-1 sm:text-sm xm:text-[13px] text-[9px]">
@@ -88,5 +86,4 @@ const ViewCards = () => {
     </>
   )
 }
-// variants={fadeIn("down", "spring", index * 0.45, 0.70 )}
 export default SectionWrapper(ViewCards)  
