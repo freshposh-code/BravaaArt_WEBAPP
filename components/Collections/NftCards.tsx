@@ -29,13 +29,13 @@ const NftCards = () => {
         <div className="p-0">
         <div className="flex justify-between py-3 items-center">
           <TextShowCase fontSize='font-bold sm:text-[1em] xm:text-[14px] text-[9px]'>{item.Desc}</TextShowCase>
-          <p className='sm:text-xs xm:text-[12px] text-[8px] text-neutral-400'>Auction Ends in</p>
+          <TextShowCase fontSize='sm:text-xs xm:text-[12px] text-[8px] text-neutral-400'>Auction Ends in</TextShowCase>
         </div>
 
         <div className="flex items-center justify-between">
           <div className='flex items-center'>
           <Image src={item.userPic} alt='avater' width={500} height={500} className='rounded-[50%] xm:h-[36px] h-[25px] xm:w-[36px] w-[25px] object-cover' />
-          <h2 className='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff'}} className='xm:text-[15px] text-[11px]'/></h2>
+          <TextShowCase fontSize='font-medium sm:text-sm xm:text-sm text-xs'>{item.UserName} <VerifiedIcon style={{ color: ' #4671ff'}} className='xm:text-[15px] text-[11px]'/></TextShowCase>
           </div>
           <div className='font-semibold text-center'>
             <div className="flex xm:gap-4 gap-1 sm:text-sm xm:text-[13px] text-[9px]">
@@ -55,7 +55,7 @@ const NftCards = () => {
           </div>
         </div>
         </div>
-        <p className='mt-5 text-[11px] text-neutral-300'>Reserve price</p>
+        <TextShowCase fontSize='mt-5 text-[11px] text-neutral-300'>Reserve price</TextShowCase>
 
         <div className="flex justify-between items-center py-[1.2px]">
           <div className='flex items-center'>

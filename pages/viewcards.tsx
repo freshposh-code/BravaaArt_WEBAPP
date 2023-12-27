@@ -24,6 +24,10 @@ const ViewCards = () => {
       <TextShowCase fontSize='text-white font-bold sm:text-[1.8rem]'>More NFT's</TextShowCase>
       </div>
 
+         <div className="flex justify-center items-center">
+      <Image src='/GoogleI.jpg' alt='' width={3000} height={3000} className='sm:w-16 w-10 sm:h-16 h-10 rounded-[50%] sm:mt-0 mt-6' />
+       </div>
+
       <section className="flex flex-wrap mt-12 justify-center">
           {nftCards2.map((item, index) => (
         <div className='text-white py-5 px-2' key={item.id}>        
@@ -32,7 +36,7 @@ const ViewCards = () => {
         <div className="p-0">
         <div className="flex justify-between py-3 items-center">
           <TextShowCase fontSize='font-bold sm:text-[1em] xm:text-[14px] text-[9px]'>{item.Desc}</TextShowCase>
-          <p className='sm:text-xs xm:text-[12px] text-[8px] text-neutral-400'>Auction Ends in</p>
+          <TextShowCase fontSize='sm:text-xs xm:text-[12px] text-[8px] text-neutral-400'>Auction Ends in</TextShowCase>
         </div>
 
         <div className="flex items-center justify-between">
@@ -75,6 +79,10 @@ const ViewCards = () => {
               ))};
   
         </section>
+
+        <footer className='flex justify-center items-center'>
+          <TextShowCase fontSize='text-white capitalize'>&copy; 2024 All rights reserve</TextShowCase>
+        </footer>
 
     </section>
     </>
