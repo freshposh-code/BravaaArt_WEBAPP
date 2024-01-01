@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const Content = () => {
   return (
-    <section className='relative min-h-screen justify-center flex items-center mt-[20rem]' id='create'>
+    <section className='relative min-h-screen justify-center flex items-center md:mt-[15rem] mt-[0rem]' id='create'>
         <div className='absolute'>
         <motion.video variants={zoomIn(0.99, 0.99)} autoPlay muted loop width="700" height="210"
        className="-z-50">

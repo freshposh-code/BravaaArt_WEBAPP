@@ -25,15 +25,14 @@ const Journey = () => {
 
            <div className="w-full h-1 curvy mt-40 flex justify-between items-center">
             <span className='w-5 h-5 rounded-[50%] span'></span>
-                {journey.map((item, index) => (
+                {journey.map((item) => (
             <span className='w-5 h-5 rounded-[50%] span relative' key={item.date}>
-              <div className='absolute right-14'>
+              <div className='absolute sm:right-14 right-7'>
               <div className='absolute bottom-10'>
-              <TextShowCase fontSize='text-white'>{item.date}</TextShowCase>
+              <TextShowCase fontSize='text-white sm:text-[1rem] xm:text-[0.4rem] text-[0.3rem]'>{item.date}</TextShowCase>
               </div>
               <div className='absolute top-16'>
-              <TextShowCase fontSize='text-white'>{item.outcome}</TextShowCase>
-              {/* <TextShowCase fontSize='text-white mt-5 max-w-[750px]'>Similar.</TextShowCase> */}
+              <TextShowCase fontSize='text-white sm:text-[1rem] text-[0.4rem]'>{item.outcome}</TextShowCase>
               </div>
               </div>
                 </span>
