@@ -25,7 +25,7 @@ const x2 = useTransform(scrollYProgress, [0, 1], [0, -150])
         <TextShowCase fontSize='text-slate-300 sm:text-base text-[0.9em]'>Top collections over this last year you should look for</TextShowCase>
         </div>
 
-        <div className="md:flex hidden flex-col">
+        <div className="md:flex hidden flex-col overflow-x-hidden">
 
         <motion.div className="text-white flex gap-4 slider" style={{x: x1}}>
             {collectionX1.map((item) => (
