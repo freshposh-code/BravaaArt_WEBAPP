@@ -16,8 +16,8 @@ const { scrollYProgress } = useScroll({
 const x1 = useTransform(scrollYProgress, [0, 1], [0, 150])
 const x2 = useTransform(scrollYProgress, [0, 1], [0, -150])
   return (
-    <section ref={container} id='discover'>
-        <div className="flex items-center justify-center mt-[24rem] m-6">
+    <section ref={container} id='discover' className='collection__gradient'>
+        <div className="flex items-center justify-center mt-[18rem] m-6 pt-6">
         <TextShowCase fontSize='text-white sm:text-[2.2rem] xm:text-[2rem] text-[1.7rem] font-bold'> <span className='sm:text-[2.4rem] text-[2rem] font-serif'>NFT</span> Collections</TextShowCase>
         </div>
 

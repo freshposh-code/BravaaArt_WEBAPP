@@ -27,7 +27,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', navColor);
     };
-  }, []); // Empty dependency array to run the effect only once after mounting
+  }, []);
   
   return (
     <>

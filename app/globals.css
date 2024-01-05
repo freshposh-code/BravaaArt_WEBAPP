@@ -80,7 +80,7 @@
 .gradient-03 {
   position: absolute;
   width: 315px;
-  height: 660px;
+  height: 830px;
   left: 0%;
   top: 41%;
   z-index: -1000;
@@ -130,4 +130,8 @@
 .span{
   background: linear-gradient(69deg, #24afff 28%, #2938ff 87%);
   filter: brightness(1.8);
+}
+
+.collection__gradient {
+  background: linear-gradient(120deg, #0000003c 50%, #202020 100% );
 }

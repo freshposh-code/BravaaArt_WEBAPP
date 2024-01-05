@@ -33,12 +33,8 @@ const HeroSection = () => {
                   ))}
                 </div>
             </div>
-            <div className="gradient-03 sm:flex hidden" />
+            <div className="gradient-03 overflow-x-hidden" />
       
-        {/* <div>
-            <Image src='/hero.jpg' alt='iamge'
-             width={500}  height={500}/>
-        </div> */}
     </motion.section>
   )
 }

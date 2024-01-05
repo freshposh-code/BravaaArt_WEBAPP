@@ -9,7 +9,7 @@ import { journey } from '@/Constant/Data'
 const Journey = () => {
   return (
     <>
-    <section className="mt-3 py-8 sm:px-20 px-6" id='community'>
+    <section className="mt-12 py-8 sm:px-20 px-6" id='community'>
       <div className='relative'>
       <div className='text-center flex justify-center items-center flex-col'>
         <TextShowCase fontSize='text-white font-extrabold sm:text-[2.3rem] xm:text-[1.7rem] text-[1.1rem]'>Our Roadmap</TextShowCase>
