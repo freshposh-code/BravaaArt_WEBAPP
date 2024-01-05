@@ -15,11 +15,11 @@ const Footer = () => {
 
       <div className="flex flex-wrap gap-16 sm:py-1 py-6">
         {footer.map((item) => (
-          <div>
+          <div key={item.head}>
             <h1 className='font-bold mb-9'>{item.head}</h1>
             <ul>
               {item.links.map((link) => (
-                <li className='text-slate-400 leading-[30px]'>{link.link}</li>
+                <li className='text-slate-400 leading-[30px]' key={link.link}>{link.link}</li>
               ))}
             </ul>
           </div>
