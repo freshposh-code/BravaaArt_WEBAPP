@@ -1,7 +1,7 @@
 'use client'
 
 import { navbar } from "@/Constant/Data"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from "@mui/icons-material";
 import { motion } from "framer-motion";
@@ -13,15 +13,21 @@ const Navbar = () => {
 
   const [color, setColor] = useState(false)
 
-  const navColor = () => {
-  if(window.scrollY >= 170) {
-      setColor(true)
-    } else {
-      setColor(false)
-    }
-  }
-  
-  window.addEventListener('scroll' , navColor)
+  useEffect(() => {
+    const navColor = () => {
+      if (window.scrollY >= 170) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener('scroll', navColor);
+
+    return () => {
+      window.removeEventListener('scroll', navColor);
+    };
+  }, []); // Empty dependency array to run the effect only once after mounting
   
   return (
     <>
